@@ -1,11 +1,10 @@
 
 describe('Controller: MainCtrl', function() {
-  var scope;
+  var scope, itemMockService = {};
 
   beforeEach(module('angularTDDSample.main'));
 
   beforeEach(function() {
-    var itemMockService;
 
     module('angularTDDSample.main', function($provide) {
       $provide.value('item', itemMockService);
@@ -721,7 +720,7 @@ describe('Controller: MainCtrl', function() {
 
         return defer.promise;
       };
-    });
+    }); 
   });
 
   
@@ -738,6 +737,10 @@ describe('Controller: MainCtrl', function() {
 
   it("should have items defined", function () {
     expect(scope.vm.items).toBeDefined();
+  });
+
+  it("should have items array", function () {
+    expect(scope.vm.items).toEqual(itemMockService.data);//TODO: should I use 'itemMockService.data' here, or use 'item' service?
   });
     
 });
