@@ -1,6 +1,7 @@
 
 
-
-angular.module( 'angularTDDSample.main', [
-  'ui.router'
-]);
+(function(){
+	angular.module( 'angularTDDSample.main', [
+  		'ui.router'
+	]);
+}());
