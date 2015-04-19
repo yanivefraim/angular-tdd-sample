@@ -3,6 +3,8 @@ angular.module( 'ngBoilerplate', [
   'templates-common',
   'ngBoilerplate.home',
   'angularTDDSample.main',
+  'angularTDDSample.itemList',
+  'angularTDDSample.item',
   'ngBoilerplate.about',
   'ui.router'
 ])
