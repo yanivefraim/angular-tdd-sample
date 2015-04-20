@@ -17,6 +17,7 @@ describe('Controller: MainCtrl', function() {
   
       itemMockService.data = defaultItemsJSON.data;
 
+      //mock "getItems" method
       itemMockService.getItems = function () {
 
         defer = $q.defer();
@@ -26,6 +27,7 @@ describe('Controller: MainCtrl', function() {
         return defer.promise;
       };
       
+      //Spy on "getItems" method
       spyOn(itemMockService, 'getItems').andCallThrough();
 
     }); 
@@ -37,6 +39,7 @@ describe('Controller: MainCtrl', function() {
 
     item = _item_;
 
+    //create "MainCtrl" controller
     $controller('MainCtrl as vm',
                 {$scope: scope, item: item });
 
