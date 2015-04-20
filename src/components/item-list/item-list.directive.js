@@ -1,36 +1,36 @@
 
 (function(){
-	
-	'use strict';
+  
+  'use strict';
 
-	function itemList() {
-		
-		function itemListCtrl () {
+  function itemList() {
+    
+    function itemListCtrl () {
 
-		}
+    }
 
-		function link () {
+    function link () {
 
-  	}
+    }
 
-		return {
-		  restrict: 'E',
-		  scope: {},
-		  template: [
-		    '<div>',
-		    '</div>'
-		  ].join(''),
-		  controllerAs: 'vm',
-		  controller: itemListCtrl,
-		  link: link
-		};
-	}
+    return {
+      restrict: 'E',
+      scope: {},
+      template: [
+        '<div>',
+        '</div>'
+      ].join(''),
+      controllerAs: 'vm',
+      controller: itemListCtrl,
+      link: link
+    };
+  }
 
-	angular
-		.module('angularTDDSample.itemList',[]);
+  angular
+    .module('angularTDDSample.itemList',[]);
 
-	angular
-		.module('angularTDDSample.itemList')
-		.directive('itemList', itemList);
+  angular
+    .module('angularTDDSample.itemList')
+    .directive('itemList', itemList);
 
 }());
