@@ -10,6 +10,7 @@
           views: {
             "main": {
               controller: 'MainCtrl',
+              controllerAs: 'vm',
               templateUrl: 'main/main.tpl.html'
             }
           },
