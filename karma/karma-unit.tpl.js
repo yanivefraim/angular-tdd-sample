@@ -18,7 +18,7 @@ module.exports = function ( karma ) {
       'src/assets/**/*.js'
     ],
     frameworks: [ 'jasmine' ],
-    plugins: [ 'karma-jasmine', 'karma-firefox-launcher', 'karma-coffee-preprocessor' ],
+    plugins: [ 'karma-jasmine', 'karma-firefox-launcher', 'karma-coffee-preprocessor', 'karma-osx-reporter' ],
     preprocessors: {
       '**/*.coffee': 'coffee',
     },
@@ -26,7 +26,7 @@ module.exports = function ( karma ) {
     /**
      * How to report, by default.
      */
-    reporters: 'dots',
+    reporters: ['dots', 'osx'],
 
     /**
      * On which port should the browser connect, on which port is the test runner
