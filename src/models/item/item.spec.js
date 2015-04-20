@@ -12,10 +12,10 @@ describe('Service: item', function () {
     
   // get your service, also get $httpBackend
   // $httpBackend will be a mock, thanks to angular-mocks.js
-  inject(function($httpBackend, _item_, _defaultJSON_) {
+  inject(function($httpBackend, _item_, _defaultItemsJSON_) {
       item = _item_;      
       httpBackend = $httpBackend;
-      defaultJSON = _defaultJSON_;
+      defaultJSON = _defaultItemsJSON_;
     });
   });
   

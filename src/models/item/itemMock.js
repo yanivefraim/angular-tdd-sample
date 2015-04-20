@@ -1,7 +1,7 @@
 (function(){
 	angular
 		.module('angularTDDSample.item.mock', [])
-		.value('defaultJSON', {"data": [{
+		.value('defaultItemsJSON', {"data": [{
   "id": 1,
   "first_name": "James",
   "last_name": "Stephens",

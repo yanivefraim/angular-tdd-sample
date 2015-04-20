@@ -7,13 +7,15 @@ describe('Controller: MainCtrl', function() {
 
   beforeEach(function() {
 
+    //"itemMockService" will be mapped to "item"
     module('angularTDDSample.main', function($provide) {
       $provide.value('item', itemMockService);
     });
 
-    inject(function($q, defaultJSON) {
+    //inject $q and defaultItemsJSON
+    inject(function($q, defaultItemsJSON) {
   
-      itemMockService.data = defaultJSON.data;
+      itemMockService.data = defaultItemsJSON.data;
 
       itemMockService.getItems = function () {
 
