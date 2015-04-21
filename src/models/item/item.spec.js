@@ -30,7 +30,8 @@ describe('Service: item', function () {
     expect(item.getList).toBeDefined();
   });
  
-  it('should get list-items', inject(function () {
+  //TODO: how can I 
+  it('should get list-items', function () {
       var items;
       //given
       httpBackend.whenGET("http://www.mocky.io/v2/5535581b57bdef59003799bc").respond(defaultJSON);
@@ -43,7 +44,25 @@ describe('Service: item', function () {
       httpBackend.flush();
 
       //then
-      expect(items).toEqual(defaultJSON.data);      
+      expect(items.length).toBe(100);//toEqual(defaultJSON.data); 
+
+      expect(items.map(function(elm){return elm.first_name;})).toEqual(defaultJSON.data.map(function(elm){return elm.first_name;}));//toEqual(defaultJSON.data);      
       
-  }));
+  });
+
+  it('should have correct first_names', function(){
+    var items;
+      //given
+      httpBackend.whenGET("http://www.mocky.io/v2/5535581b57bdef59003799bc").respond(defaultJSON);
+
+      //when
+      item.getList().then(function(response){
+        items = response.data;
+      });
+
+      httpBackend.flush();
+
+      //then
+      expect(items.map(function(elm){return elm.first_name;})).toEqual(defaultJSON.data.map(function(elm){return elm.first_name;}));//toEqual(defaultJSON.data);      
+  });
 });
