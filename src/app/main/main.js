@@ -36,9 +36,6 @@
 
 		vm.items = itemListData.data;
 
-		// item.getList().then(function(items){
-		// 	vm.items = items;		
-		// });
 	}		
 
 }());
