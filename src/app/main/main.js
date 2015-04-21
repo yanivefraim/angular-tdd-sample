@@ -2,7 +2,7 @@
 (function(){
 	'use strict';
 
-	function getItems (item) {debugger;
+	function getItems (item) {
     return item.getList();
   }; 
 
