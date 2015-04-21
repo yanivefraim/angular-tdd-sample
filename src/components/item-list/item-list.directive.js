@@ -6,18 +6,22 @@
   function itemList() {
     
     function itemListCtrl () {
-
+      
     }
 
-    function link () {
+    function link (scope) {
 
     }
 
     return {
       restrict: 'E',
-      scope: {},
+      scope: {
+        items: "="
+      },
       template: [
         '<div>',
+        '<ul>',
+        '<li ng-repeat="item in items">{{item.first_name}}</li>',
         '</div>'
       ].join(''),
       controllerAs: 'vm',
