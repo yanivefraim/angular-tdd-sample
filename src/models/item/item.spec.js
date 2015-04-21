@@ -33,7 +33,7 @@ describe('Service: item', function () {
   it('should get list-items', inject(function () {
       var items;
       //given
-      httpBackend.whenGET("http://www.mocky.io/v2/553399a619e528110ff765d9").respond(defaultJSON);
+      httpBackend.whenGET("http://www.mocky.io/v2/5535581b57bdef59003799bc").respond(defaultJSON);
 
       //when
       item.getList().then(function(response){

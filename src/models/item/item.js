@@ -12,7 +12,7 @@
 
 		///////
 		function getList(){
-			return $http.get('http://www.mocky.io/v2/553399a619e528110ff765d9')
+			return $http.get('http://www.mocky.io/v2/5535581b57bdef59003799bc')
 					.then(getListComplete)
 					.catch(getListFailed);
 
