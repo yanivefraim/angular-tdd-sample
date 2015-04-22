@@ -4,7 +4,7 @@
 
 	function getItems (item) {
     return item.getList();
-  }; 
+  }
 
 	angular.module('angularTDDSample.main', [
     'ui.router', 'angularTDDSample.item', 'angularTDDSample.itemList'
