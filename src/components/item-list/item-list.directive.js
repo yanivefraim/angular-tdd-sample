@@ -21,7 +21,9 @@
       template: [
         '<div>',
         '<ul>',
-        '<li ng-repeat="item in items">{{item.first_name}}</li>',
+        '<li ng-repeat="item in items">',
+        '<item-element item-data="item"></item-element>',
+        '</li>',
         '</div>'
       ].join(''),
       controllerAs: 'vm',

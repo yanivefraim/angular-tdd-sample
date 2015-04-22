@@ -16,10 +16,11 @@
     return {
       restrict: 'E',
       scope: {
-        items: "="
+        itemData: "="
       },
       template: [
         '<div>',
+        '{{first_name}}',
         '</div>'
       ].join(''),
       controllerAs: 'vm',
