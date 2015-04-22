@@ -33,7 +33,7 @@
   }
 
   angular
-    .module('angularTDDSample.itemList',[]);
+    .module('angularTDDSample.itemList',['angularTDDSample.itemElement']);
 
   angular
     .module('angularTDDSample.itemList')

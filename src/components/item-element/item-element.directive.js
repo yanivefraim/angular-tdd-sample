@@ -20,7 +20,7 @@
       },
       template: [
         '<div>',
-        '{{first_name}}',
+        '{{itemData.first_name}}',
         '</div>'
       ].join(''),
       controllerAs: 'vm',
