@@ -39,11 +39,11 @@ describe('Unit testing item-element directive', function() {
 
   }); 
 
-  it('Expect "item-data" to have correct first_name', function(){
+  it('Expect "item-data" to have correct data', function(){
     
     var isolated = element.isolateScope();
     
-    expect(isolated.itemData.first_name).toEqual(defaultItemsJSON.data[0].first_name);
+    expect(isolated.itemData).toEqual(defaultItemsJSON.data[0]);
   });
 
 });
