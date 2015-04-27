@@ -19,12 +19,17 @@
         items: "="
       },
       template: [
-        '<div>',
-        '<ul>',
-        '<li ng-repeat="item in items">',
+        '<md-list>',
+        '<md-list-item class="md-3-line" ng-repeat="item in items">',
         '<item-element item-data="item"></item-element>',
-        '</li>',
-        '</div>'
+        '</md-list-item>',
+        '</md-list>'
+        // '<div>',
+        // '<ul>',
+        // '<li ng-repeat="item in items">',
+        // '<item-element item-data="item"></item-element>',
+        // '</li>',
+        // '</div>'
       ].join(''),
       controllerAs: 'vm',
       controller: itemListCtrl,

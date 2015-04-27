@@ -19,9 +19,16 @@
         itemData: "="
       },
       template: [
-        '<div>',
-        '{{itemData.first_name}} {{itemData.last_name}}',
-        '</div>'
+        
+            '<!-- <img ng-src="{{item.face}}" alt="{{item.who}}" class="md-avatar"> -->',
+            '<div class="md-tile-content">',
+            '<h3>{{itemData.first_name}} {{itemData.last_name}}</h3>',
+            '<h4></h4>',
+            '<p>',
+            '</p>',
+            '</div>',
+            '<md-divider inset></md-divider>'
+        
       ].join(''),
       controllerAs: 'vm',
       controller: itemElementCtrl,

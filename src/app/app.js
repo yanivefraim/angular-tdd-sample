@@ -1,4 +1,5 @@
 angular.module( 'ngBoilerplate', [
+  
   'templates-app',
   'templates-common',
   'ngBoilerplate.home',
@@ -6,7 +7,9 @@ angular.module( 'ngBoilerplate', [
   'angularTDDSample.itemList',
   'angularTDDSample.item',
   'ngBoilerplate.about',
-  'ui.router'
+  'ui.router',
+  'ngMaterial'
+
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
